@@ -8,3 +8,28 @@ This library makes available, functions that return HTML link/script tags for po
 * W3.CSS
 * JQuery
 * Popper.js
+
+## Installation ##
+To install, download and install Splint from <https://splint.cynobit.com/downloads/splint> and then run the below from your Code Igniter project root
+
+```bash
+splint install francis94c/cdn-helper
+```
+## Loading ##
+
+From anywhere you can access the ```CI``` instance
+
+```php
+$this->load->splint("francis94c/cdn-helper", "%cdn");
+```
+
+## Functions ##
+
+```php
+w3css();
+//  returns '<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />'
+```
+```php
+jquery();
+//  returns '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>'
+```
