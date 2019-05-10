@@ -8,6 +8,8 @@ This library makes available, functions that return HTML link/script tags for po
 * W3.CSS
 * JQuery
 * Popper.js
+* FontsAwesome
+* REACT
 
 ## Installation ##
 To install, download and install Splint from <https://splint.cynobit.com/downloads/splint> and then run the below from your Code Igniter project root
@@ -43,5 +45,13 @@ returns '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstr
 ```
 ```php
 popper();
-//  returns '<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>'
+//  returns <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+```
+```php
+fontsawesome();
+// returns <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+```
+```php
+react();
+// returns <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script> <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 ```
