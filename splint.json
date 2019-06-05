@@ -1,6 +1,6 @@
 {
   "name": "francis94c/cdn-helper",
-  "type": "library",
+  "type": "helper",
   "description": "Code Igniter helper for outputting popular JS and CSS library CDN links..",
   "tags": ["w3css", "ui", "css", "js", "jquery", "popper", "bootstrap"],
   "page": "https://github.com/francis94c/cdn-helper",
