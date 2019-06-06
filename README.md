@@ -55,3 +55,7 @@ fontsawesome();
 react();
 // returns <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script> <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 ```
+```php
+qunit();
+// returns <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css"> <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+```

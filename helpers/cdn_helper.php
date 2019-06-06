@@ -55,9 +55,20 @@ if (!function_exists("fontawesome")) {
 }
 
 if (!function_exists("react")) {
+  /**
+   * [react description]
+   * @return [type] [description]
+   */
   function react() {
     $cdn = "<script crossorigin src=\"https://unpkg.com/react@16/umd/react.production.min.js\"></script>";
     return $cdn . PHP_EOL . "<script crossorigin src=\"https://unpkg.com/react-dom@16/umd/react-dom.production.min.js\"></script>";
+  }
+}
+
+if (!function_exists("qunit")) {
+  function qunit() {
+    $cdn = "<link rel=\"stylesheet\" href=\"https://code.jquery.com/qunit/qunit-2.9.2.css\">";
+    return $cdn . PHP_EOL . "<script src=\"https://code.jquery.com/qunit/qunit-2.9.2.js\"></script>";
   }
 }
 ?>
