@@ -66,9 +66,23 @@ if (!function_exists("react")) {
 }
 
 if (!function_exists("qunit")) {
+  /**
+   * [qunit description]
+   * @return [type] [description]
+   */
   function qunit() {
     $cdn = "<link rel=\"stylesheet\" href=\"https://code.jquery.com/qunit/qunit-2.9.2.css\">";
     return $cdn . PHP_EOL . "<script src=\"https://code.jquery.com/qunit/qunit-2.9.2.js\"></script>" . PHP_EOL;
+  }
+}
+
+if (!function_exisists("angularjs")) {
+  /**
+   * [angularjs description]
+   * @return [type] [description]
+   */
+  function angularjs() {
+    return "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js\"></script>" . PHP_EOL;
   }
 }
 ?>

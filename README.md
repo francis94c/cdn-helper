@@ -10,6 +10,7 @@ This library makes available, functions that return HTML link/script tags for po
 * Popper.js
 * FontsAwesome
 * REACT
+* AngularJS
 
 ## Installation ##
 To install, download and install Splint from <https://splint.cynobit.com/downloads/splint> and then run the below from your Code Igniter project root
@@ -58,4 +59,8 @@ react();
 ```php
 qunit();
 // returns <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css"> <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+```
+```php
+angularjs();
+// returns <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 ```
