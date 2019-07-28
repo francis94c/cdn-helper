@@ -85,4 +85,17 @@ if (!function_exisists("angularjs")) {
     return "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js\"></script>" . PHP_EOL;
   }
 }
+
+if (!function_exisists("materializecss")) {
+  /**
+   * [materializecss Materialize CSS CDN]
+   * @param  boolean $js Import JS.
+   * @return string      Browser import Strings
+   */
+  function materializecss(bool $js=false):string {
+    $cdn = "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css\">";
+    if ($js) return $cdn . PHP_EOL . "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js\"></script>" . PHP_EOL;
+    return $cdn . PHP_EOL;
+  }
+}
 ?>

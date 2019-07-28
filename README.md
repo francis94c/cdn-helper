@@ -11,6 +11,7 @@ This library makes available, functions that return HTML link/script tags for po
 * FontsAwesome
 * REACT
 * AngularJS
+* Materialize CSS
 
 ## Installation ##
 To install, download and install Splint from <https://splint.cynobit.com/downloads/splint> and then run the below from your Code Igniter project root
