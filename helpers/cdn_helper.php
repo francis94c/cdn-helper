@@ -92,10 +92,40 @@ if (!function_exisists("materializecss")) {
    * @param  boolean $js Import JS.
    * @return string      Browser import Strings
    */
-  function materializecss(bool $js=false):string {
+  function materializecss(bool $js=false):string
+  {
     $cdn = "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css\">";
     if ($js) return $cdn . PHP_EOL . "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js\"></script>" . PHP_EOL;
     return $cdn . PHP_EOL;
   }
 }
-?>
+
+if (!function_exists('vue')) {
+  /**
+   * [vue description]
+   * @date   2020-02-10
+   * @return string     [description]
+   */
+  function vue():string
+  {
+    return '<script src="' .
+    ENVIRONMENT === 'development' ?
+    'https://cdn.jsdelivr.net/npm/vue/dist/vue.js' : 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' .
+    '"></script>';
+  }
+}
+
+if (!function_exists('vuex')) {
+  /**
+   * [vuex description]
+   * @date   2020-02-10
+   * @return string     [description]
+   */
+  function vuex():string
+  {
+    return '<script src="' .
+    ENVIRONMENT === 'development' ?
+    'https://unpkg.com/vuex@3.1.1' : 'https://unpkg.com/vuex@3.1.1/dist/vuex.min.js' .
+    '"></script>';
+  }
+}
