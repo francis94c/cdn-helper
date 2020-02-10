@@ -49,4 +49,5 @@ qunit();
 angularjs();
 materializecss();
 vue();
+vuex();
 ```
