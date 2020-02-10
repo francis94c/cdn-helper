@@ -1,4 +1,4 @@
-![Licence MIT](https://img.shields.io/github/license/francis94c/cdn-helper.svg) ![Splint](https://img.shields.io/badge/splint--ci-francis94c%2Fcdn--helper-orange.svg) ![Lates Release](https://img.shields.io/github/release/francis94c/cdn-helper.svg) ![Commits](https://img.shields.io/github/last-commit/francis94c/cdn-helper.svg)
+![Licence MIT](https://img.shields.io/github/license/francis94c/cdn-helper.svg) ![Splint](https://img.shields.io/badge/splint--ci-francis94c%2Fcdn--helper-orange.svg) ![Latest Release](https://img.shields.io/github/release/francis94c/cdn-helper.svg) ![Commits](https://img.shields.io/github/last-commit/francis94c/cdn-helper.svg)
 
 # cdn-helper #
 
@@ -10,6 +10,8 @@ This library makes available, functions that return HTML link/script tags for po
 * Popper.js
 * FontsAwesome
 * REACT
+* AngularJS
+* Materialize CSS
 
 ## Installation ##
 To install, download and install Splint from <https://splint.cynobit.com/downloads/splint> and then run the below from your Code Igniter project root
@@ -54,4 +56,12 @@ fontsawesome();
 ```php
 react();
 // returns <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script> <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+```
+```php
+qunit();
+// returns <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css"> <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+```
+```php
+angularjs();
+// returns <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 ```
