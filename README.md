@@ -12,6 +12,8 @@ This library makes available, functions that return HTML link/script tags as str
 * REACT
 * AngularJS
 * Materialize CSS
+* Vue
+* VueX
 
 You can call them in your view files.
 
@@ -40,11 +42,12 @@ w3css();
 jquery();
 bootstrap();
 bootstrap(true); // Return JS CDN as well.
-popper();  // Popper JS
+popper();
 fontsawesome();
 react();
 qunit();
 angularjs();
 materializecss();
 vue();
+vuex();
 ```
