@@ -86,7 +86,7 @@ if (!function_exists("angularjs")) {
   }
 }
 
-if (!function_exisists("materializecss")) {
+if (!function_exists("materializecss")) {
   /**
    * [materializecss Materialize CSS CDN]
    * @param  boolean $js Import JS.
