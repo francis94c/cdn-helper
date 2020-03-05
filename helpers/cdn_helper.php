@@ -76,7 +76,7 @@ if (!function_exists("qunit")) {
   }
 }
 
-if (!function_exisists("angularjs")) {
+if (!function_exists("angularjs")) {
   /**
    * [angularjs description]
    * @return [type] [description]
